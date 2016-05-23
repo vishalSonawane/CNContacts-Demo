@@ -15,6 +15,12 @@
 		B0F309771CEEE66900978FD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F309751CEEE66900978FD8 /* LaunchScreen.storyboard */; };
 		B0F309821CEEE66900978FD8 /* CNContacts_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F309811CEEE66900978FD8 /* CNContacts_DemoTests.m */; };
 		B0F3098D1CEEE66900978FD8 /* CNContacts_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3098C1CEEE66900978FD8 /* CNContacts_DemoUITests.m */; };
+		B0F3099C1CEEE6D300978FD8 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F3099A1CEEE6D200978FD8 /* Contacts.framework */; };
+		B0F3099D1CEEE6D300978FD8 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F3099B1CEEE6D200978FD8 /* ContactsUI.framework */; };
+		B0F309A01CEEE76800978FD8 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F3099F1CEEE76800978FD8 /* Contact.m */; };
+		B0F309A41CEEEEBB00978FD8 /* ContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F309A21CEEEEBB00978FD8 /* ContactsCell.m */; };
+		B0F309A51CEEEEBB00978FD8 /* ContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F309A31CEEEEBB00978FD8 /* ContactsCell.xib */; };
+		B0F309A81CEF260200978FD8 /* ContactDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F309A71CEF260200978FD8 /* ContactDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,15 @@
 		B0F309881CEEE66900978FD8 /* CNContacts-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CNContacts-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F3098C1CEEE66900978FD8 /* CNContacts_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNContacts_DemoUITests.m; sourceTree = "<group>"; };
 		B0F3098E1CEEE66900978FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0F3099A1CEEE6D200978FD8 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		B0F3099B1CEEE6D200978FD8 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		B0F3099E1CEEE76800978FD8 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		B0F3099F1CEEE76800978FD8 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		B0F309A11CEEEEBB00978FD8 /* ContactsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsCell.h; sourceTree = "<group>"; };
+		B0F309A21CEEEEBB00978FD8 /* ContactsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsCell.m; sourceTree = "<group>"; };
+		B0F309A31CEEEEBB00978FD8 /* ContactsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsCell.xib; sourceTree = "<group>"; };
+		B0F309A61CEF260200978FD8 /* ContactDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailVC.h; sourceTree = "<group>"; };
+		B0F309A71CEF260200978FD8 /* ContactDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F3099C1CEEE6D300978FD8 /* Contacts.framework in Frameworks */,
+				B0F3099D1CEEE6D300978FD8 /* ContactsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 		B0F3095B1CEEE66600978FD8 = {
 			isa = PBXGroup;
 			children = (
+				B0F3099A1CEEE6D200978FD8 /* Contacts.framework */,
+				B0F3099B1CEEE6D200978FD8 /* ContactsUI.framework */,
 				B0F309661CEEE66700978FD8 /* CNContacts-Demo */,
 				B0F309801CEEE66900978FD8 /* CNContacts-DemoTests */,
 				B0F3098B1CEEE66900978FD8 /* CNContacts-DemoUITests */,
@@ -102,9 +121,16 @@
 			isa = PBXGroup;
 			children = (
 				B0F3096A1CEEE66800978FD8 /* AppDelegate.h */,
+				B0F309A61CEF260200978FD8 /* ContactDetailVC.h */,
+				B0F309A71CEF260200978FD8 /* ContactDetailVC.m */,
+				B0F3099E1CEEE76800978FD8 /* Contact.h */,
+				B0F3099F1CEEE76800978FD8 /* Contact.m */,
 				B0F3096B1CEEE66800978FD8 /* AppDelegate.m */,
 				B0F3096D1CEEE66800978FD8 /* ViewController.h */,
 				B0F3096E1CEEE66800978FD8 /* ViewController.m */,
+				B0F309A11CEEEEBB00978FD8 /* ContactsCell.h */,
+				B0F309A21CEEEEBB00978FD8 /* ContactsCell.m */,
+				B0F309A31CEEEEBB00978FD8 /* ContactsCell.xib */,
 				B0F309701CEEE66800978FD8 /* Main.storyboard */,
 				B0F309731CEEE66800978FD8 /* Assets.xcassets */,
 				B0F309751CEEE66900978FD8 /* LaunchScreen.storyboard */,
@@ -243,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F309A51CEEEEBB00978FD8 /* ContactsCell.xib in Resources */,
 				B0F309771CEEE66900978FD8 /* LaunchScreen.storyboard in Resources */,
 				B0F309741CEEE66800978FD8 /* Assets.xcassets in Resources */,
 				B0F309721CEEE66800978FD8 /* Main.storyboard in Resources */,
@@ -270,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F309A01CEEE76800978FD8 /* Contact.m in Sources */,
 				B0F3096F1CEEE66800978FD8 /* ViewController.m in Sources */,
+				B0F309A81CEF260200978FD8 /* ContactDetailVC.m in Sources */,
 				B0F3096C1CEEE66800978FD8 /* AppDelegate.m in Sources */,
 				B0F309691CEEE66700978FD8 /* main.m in Sources */,
+				B0F309A41CEEEEBB00978FD8 /* ContactsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CNContacts-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "benchmark.CNContacts-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CNContacts-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "benchmark.CNContacts-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
